@@ -14,6 +14,21 @@ module.exports = (grunt) ->
 				ext: '.html'
 			}
 		}
+		coffee: {
+			dist: {
+				options: {
+					join: true
+				}
+				files: {
+					'dist/game.js': [
+						'src/coffee/main.coffee'
+						'src/coffee/menu.coffee'
+						'src/coffee/play.coffee'
+						'src/coffee/gameover.coffee'
+					]
+				}
+			}
+		}
 		copy: {
 			libaries: {
 				files: [{
@@ -35,6 +50,7 @@ module.exports = (grunt) ->
 	}
 
 	grunt.loadNpmTasks 'grunt-contrib-jade'
+	grunt.loadNpmTasks 'grunt-contrib-coffee'
 	grunt.loadNpmTasks 'grunt-contrib-copy'
 
-	grunt.registerTask 'default', ['jade', 'copy']
+	grunt.registerTask 'default', ['jade', 'coffee', 'copy']
