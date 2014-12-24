@@ -23,6 +23,14 @@ module.exports = (grunt) ->
 					dest: 'dist/'
 				}]
 			}
+			assets: {
+				files: [{
+					expand: true
+					src: ['**']
+					cwd: 'src/assets/'
+					dest: 'dist/assets/'
+				}]
+			}
 		}
 	}
 
