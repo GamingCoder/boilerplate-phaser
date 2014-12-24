@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/GamingCoder/boilerplate-phaser/issues"
   },
-  "homepage": "https://github.com/GamingCoder/boilerplate-phaser"
+  "homepage": "https://github.com/GamingCoder/boilerplate-phaser",
+  "dependencies": {
+    "grunt": "^0.4.5"
+  }
 }
