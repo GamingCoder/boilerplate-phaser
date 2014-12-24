@@ -14,8 +14,19 @@ module.exports = (grunt) ->
 				ext: '.html'
 			}
 		}
+		copy: {
+			libaries: {
+				files: [{
+					expand: true
+					src: ['**']
+					cwd: 'src/libaries/'
+					dest: 'dist/'
+				}]
+			}
+		}
 	}
 
 	grunt.loadNpmTasks 'grunt-contrib-jade'
+	grunt.loadNpmTasks 'grunt-contrib-copy'
 
-	grunt.registerTask 'default', ['jade']
+	grunt.registerTask 'default', ['jade', 'copy']
