@@ -7,7 +7,6 @@ class loadState
 		game.scale.pageAlignHorizontally = true
 		game.scale.refresh()
 		game.stage.backgroundColor = '#ffffff'
-		document.body.style.backgroundColor = '#' + game.stage.backgroundColor.toString 16
 
 		# load assets
 		#game.load.image 'name', 'assets/name.png'
