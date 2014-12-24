@@ -1,0 +1,24 @@
+{
+  "name": "boilerplate-phaser",
+  "version": "1.0.0",
+  "description": "Phaser.io boilerplate project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GamingCoder/boilerplate-phaser"
+  },
+  "keywords": [
+    "phaser",
+    "game",
+    "canvas"
+  ],
+  "author": "Tobias Meyer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GamingCoder/boilerplate-phaser/issues"
+  },
+  "homepage": "https://github.com/GamingCoder/boilerplate-phaser"
+}
